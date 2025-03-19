@@ -389,7 +389,7 @@ export default function Dashboard() {
               sx={{ borderBottom: 1, borderColor: "divider" }}
             >
               <Tab label="System Overview" />
-              <Tab label="Technical Analysis" />
+              <Tab label="Detailed Analysis" />
             </Tabs>
           </CardContent>
         </Card>

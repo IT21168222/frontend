@@ -123,10 +123,8 @@ export default function AnalyzeFailurePage() {
             </Typography>
             <Typography variant="body1" color="textSecondary" gutterBottom></Typography>
               Below is an analysis of the possible causes and solutions for the failure type: <strong>{failureDataPassed.Failure_Type_Name}</strong>.
-            </Paper>
-        </>)}
       <Typography variant="h6" fontWeight="bold" gutterBottom>
-        Possible Causes:
+        Preventive Mesures:
       </Typography>
       <ul>
         {possibleCauses.map((cause, index) => (
@@ -135,6 +133,8 @@ export default function AnalyzeFailurePage() {
           </li>
         ))}
       </ul>
+            </Paper>
+        </>)}
     <Box sx={{ width: "100%" }}>
         <Tabs
           value={activeTab}

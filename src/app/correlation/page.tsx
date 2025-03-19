@@ -127,14 +127,14 @@ const CorrelationHeatmap = () => {
         <Chart type="matrix" data={data} options={options} />
       </div>
 
-      {/* <PairwiseLineCharts
+      <PairwiseLineCharts
         dataset={{
           Variable1: [12, 15, 20, 25, 18, 17, 30, 35, 40, 45],
           Variable2: [8, 10, 12, 15, 13, 14, 20, 22, 25, 28],
           Variable3: [50, 45, 40, 35, 30, 25, 20, 15, 10, 5],
           Variable4: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
         }}
-      /> */}
+      />
     </>
   );
 };

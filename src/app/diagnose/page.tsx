@@ -84,7 +84,7 @@ export default function Diagnose() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-8">
       <div className="w-full">
         <h1 className="text-4xl font-bold mb-8 text-blue-800 text-center">
-          Machine Health Dashboard
+          Machine Diagnostic Dashboard
         </h1>
         <div className="grid md:grid-cols-2 gap-8">
           <form
@@ -135,19 +135,19 @@ export default function Diagnose() {
                 />
                 </div>
 
-              <div>
+                <div>
                 <label className="block text-gray-700 font-medium mb-2">
                   Vibration 03 Sensor Reading
                 </label>
                 <input
                   type="number"
                   name="vibration3"
-                  value={formData.vibration3}
+                  value={parseFloat(formData.vibration3).toFixed(2)}
                   onChange={handleInputChange}
                   className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 hover:border-blue-300"
                   required
                 />
-              </div>
+                </div>
 
               <div className="col-span-2">
                 <label className="block text-gray-700 font-medium mb-3">
